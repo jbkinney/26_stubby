@@ -1,0 +1,19 @@
+from setuptools import setup
+from pybind11.setup_helpers import Pybind11Extension, build_ext
+
+ext_modules = [
+    Pybind11Extension(
+        "_touzet_cpp",
+        sources=[
+            "src/cpp/touzet.cpp",
+            "src/cpp/Matrix.cpp",
+        ],
+        include_dirs=["src/cpp"],
+        cxx_std=17,
+    ),
+]
+
+setup(
+    ext_modules=ext_modules,
+    cmdclass={"build_ext": build_ext},
+)
