@@ -44,9 +44,7 @@ LEGEND_KW = dict(fontsize=LEGEND_FONTSIZE, handlelength=2)
 # ── Sigmoid palette (fig5) ────────────────────────────────────
 COLOR_SIGMOID = ["C4", "C5", "C6"]
 
-# ── Hexbin / colorbar (fig6) ──────────────────────────────────
-HEXBIN_KW = dict(gridsize=60, cmap="viridis", linewidths=0.1,
-                 edgecolors="face")
+# ── Colorbar defaults ─────────────────────────────────────────
 COLORBAR_KW = dict(shrink=0.85, pad=0.02)
 
 # ── Plot styles ────────────────────────────────────────────────
